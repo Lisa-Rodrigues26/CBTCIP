@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f05e604b54.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="menu-header">
+            <span><i class="fas fa-bars fa-lg"></i></span>
+            <span style="font-size: 21.5px;">MENU</span>
+            </div>
+            <nav class="menu-items" >
+                <a href=" #" id="today">TODAY</a>
+                <a href=" #" id="tomorrow">TOMORROW</a>
+                <a href=" #" id="this-week">THIS WEEK</a>
+            </nav>
+        </div>
+        <div class="main" id="mainContent">
+            <div class="category" id="todaySection">
+                <ul class="lists-heading">
+                <li>Personal </li>
+                <div>
+                <input type="text" id="personalTodayInput" class="input" placeholder="Add your task" >
+                <button onclick="addTask('personalTodayInput', 'personalTodayContainer', 'personalTodayComplete')"><i class="fas fa-plus fa-xs"></i> Add</button>
+                </div>
+                <ul id="personalTodayContainer" class="tasks"></ul>
+                <div>
+                    <h4>Completed Tasks</h4>
+                    <ul id="personalTodayComplete" class="completed"></ul>
+                </div>
+                <li>Work </li>
+                <div>
+                <input type="text" id="workTodayInput" class="input" placeholder="Add your task" >
+                <button onclick="addTask('workTodayInput', 'workTodayContainer', 'workTodayComplete')"><i class="fas fa-plus fa-xs"></i> Add</button>
+                </div>
+                <ul id="workTodayContainer" class="tasks"></ul>
+                <div>
+                    <h4>Completed Tasks</h4>
+                    <ul id="workTodayComplete" class="completed"></ul>
+                </div>
+                <li>Shopping </li>
+                <div>
+                <input type="text" id="shoppingTodayInput" class="input" placeholder="Add your task" >
+                <button onclick="addTask('shoppingTodayInput', 'shoppingTodayContainer', 'shoppingTodayComplete')"><i class="fas fa-plus fa-xs"></i> Add</button>
+                </div>
+                <ul id="shoppingTodayContainer" class="tasks"></ul>
+                <div>
+                    <h4>Completed Tasks</h4>
+                    <ul id="shoppingTodayComplete" class="completed"></ul>
+                </div>
+                </ul>
+            </div>
+            <div class="category" id="tomorrowSection" style="display:none;">
+                <ul class="lists-heading">
+                <li>Personal </li>
+                <div>
+                <input type="text" id="personalTomorrowInput" class="input" placeholder="Add your task" >
+                <button onclick="addTask('personalTomorrowInput', 'personalTomorrowContainer', 'personalTomorrowComplete')"><i class="fas fa-plus fa-xs"></i> Add</button>
+                </div>
+                <ul id="personalTomorrowContainer" class="tasks"></ul>
+                <div>
+                    <h4>Completed Tasks</h4>
+                    <ul id="personalTomorrowComplete" class="completed"></ul>
+                </div>
+                <li>Work </li>
+                <div>
+                <input type="text" id="workTomorrowInput" class="input" placeholder="Add your task" >
+                <button onclick="addTask('workTomorrowInput', 'workTomorrowContainer', 'workTomorrowComplete')"><i class="fas fa-plus fa-xs"></i> Add</button>
+                </div>
+                <ul id="workTomorrowContainer" class="tasks"></ul>
+                <div>
+                    <h4>Completed Tasks</h4>
+                    <ul id="workTomorrowComplete" class="completed"></ul>
+                </div>
+                <li>Shopping </li>
+                <div>
+                <input type="text" id="shoppingTomorrowInput" class="input" placeholder="Add your task" >
+                <button onclick="addTask('shoppingTomorrowInput', 'shoppingTomorrowContainer', 'shoppingTomorrowComplete')"><i class="fas fa-plus fa-xs"></i> Add</button>
+                </div>
+                <ul id="shoppingTomorrowContainer" class="tasks"></ul>
+                <div>
+                    <h4>Completed Tasks</h4>
+                    <ul id="shoppingTomorrowComplete" class="completed"></ul>
+                </div>
+                </ul>
+            </div>
+            <div class="category" id="thisWeekSection" style="display:none;">
+                <ul class="lists-heading">
+                <li>Personal </li>
+                <div>
+                <input type="text" id="personalThisWeekInput" class="input" placeholder="Add your task" >
+                <button onclick="addTask('personalThisWeekInput', 'personalThisWeekContainer', 'personalThisWeekComplete')"><i class="fas fa-plus fa-xs"></i> Add</button>
+                </div>
+                <ul id="personalThisWeekContainer" class="tasks"></ul>
+                <div>
+                    <h4>Completed Tasks</h4>
+                    <ul id="personalThisWeekComplete" class="completed"></ul>
+                </div>
+                <li>Work </li>
+                <div>
+                <input type="text" id="workThisWeekInput" class="input" placeholder="Add your task" >
+                <button onclick="addTask('workThisWeekInput', 'workThisWeekContainer', 'workThisWeekComplete')"><i class="fas fa-plus fa-xs"></i> Add</button>
+                </div>
+                <ul id="workThisWeekContainer" class="tasks"></ul>
+                <div>
+                    <h4>Completed Tasks</h4>
+                    <ul id="workThisWeekComplete" class="completed"></ul>
+                </div>
+                <li>Shopping </li>
+                <div>
+                <input type="text" id="shoppingThisWeekInput" class="input" placeholder="Add your task" >
+                <button onclick="addTask('shoppingThisWeekInput', 'shoppingThisWeekContainer', 'shoppingThisWeekComplete')"><i class="fas fa-plus fa-xs"></i> Add</button>
+                </div>
+                <ul id="shoppingThisWeekContainer" class="tasks"></ul>
+                <div>
+                    <h4>Completed Tasks</h4>
+                    <ul id="shoppingThisWeekComplete" class="completed"></ul>
+                </div>
+                    </ul>
+           </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
